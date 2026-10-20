@@ -1,0 +1,17 @@
+INSTANT PHONE ALERT (Telegram) - one-time setup, about 5 minutes. No terminal needed.
+
+1. Install Telegram on your phone and sign in.
+2. In Telegram, search for  BotFather  (blue tick) and open it. Send:  /newbot
+3. It asks for a name (example: Swasthik Alerts) and a username that ends in "bot" (example: swasthik_alerts_bot).
+4. BotFather sends a long TOKEN like  123456789:ABCdef...  Copy it.
+5. Search for your new bot's username in Telegram, open it, press START, and send it any message (example: hi).
+6. On your computer, open this address in a browser (put your token in place of PASTE_TOKEN):
+      https://api.telegram.org/botPASTE_TOKEN/getUpdates
+7. Find the part that looks like  "chat":{"id":123456789  . That number is your CHAT ID.
+8. Open index.html in Notepad. Near the top of the second script find  tg: { token: '', chat: '' }
+   Type them between the quotes, like:  tg: { token: '123456789:ABCdef...', chat: '123456789' }
+9. Save. Drag the Swasthik_Multi_Agency folder onto Netlify again.
+10. Open your live site, send a test request, and your phone should buzz in about a second.
+
+Note: the token is visible to anyone who views the page source. Others could only send spam messages to your bot, they cannot read your requests.
+If that ever happens, send /revoke to BotFather to get a new token.
