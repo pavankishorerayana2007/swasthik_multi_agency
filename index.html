@@ -1138,12 +1138,12 @@ const PROJ_IMG = { web: ['', '', ''], ui: ['', '', ''] }; // one per project, sa
 const SHOW_DEMO_NOTES = false;                          // true shows the "Demo ... replace" notes, false hides them
 // SERVICE DATA: the text, status, inclusions, and options used to build the Services pages and enquiry form.
 const SERVICES = [
-    { id: 'web', t: 'Web development', active: true, s: 'Accepting projects', d: 'Fast, responsive websites you can rely on, from a simple business site to a store with an admin panel.', inc: ['Mobile-friendly design', 'Fast loading and SEO basics', 'Easy content updates', 'Launch and support'], o: ['Business website', 'E-commerce store', 'Portfolio website', 'Landing page', 'Admin panel or CMS'] },
-    { id: 'ui', t: 'UI design, prototypes and upkeep', active: true, s: 'Accepting projects', d: 'Clear, modern interfaces. We design the screens, build clickable prototypes to test ideas, and keep your interface fresh after launch.', inc: ['Wireframes', 'Design system', 'Clickable prototype', 'Monthly maintenance'], o: ['Website UI design', 'App UI design', 'Clickable prototype', 'Monthly UI maintenance'] }
+    { id: 'web', t: 'Web development', active: true, s: 'Accepting projects', d: 'Fast, responsive websites you can rely on, from a simple business site to a store with an admin panel.', inc: ['Mobile-friendly design', 'Easy content updates', 'Launch and support'], o: ['Business website', 'E-commerce store', 'Portfolio website', 'educational sites', 'Admin panel','sensing website','user requirements'] },
+    { id: 'ui', t: 'UI design, prototypes', active: true, s: 'Accepting projects', d: 'Clear, modern interfaces. We design the screens, build clickable prototypes to test ideas, and keep your interface fresh after launch.', inc: [ 'UI/UX Design system', 'Clickable prototype',], o: ['Website UI design', 'App UI design', 'Clickable prototype'] }
 ];
 // PROJECT DATA: sample project titles, client placeholders, descriptions, and years shown on project pages.
 const PROJ = {
-    web: ['Quantum-Market(Business website)|Client A|A clean online retail site for a local store and Product catalogue with enquiry & admin panel.|2026', 'Air-control||we can control our laptop(pc) by moving the hand on air|2026', 'GestureX||it is a bridge between Deaf and Dumb site hand senceing too.|2026'],
+    web: ['Quantum-Market(Business website)|Client A|A clean online retail site for a local store and Product catalogue with enquiry & admin panel.|2026', 'Air-control||we can control our laptop(pc) by moving the hand on air|2026', 'GestureX||it is a bridge between Deaf and Dumb site hand sensing too.|2026'],
     ui: ['Mobile app UI|Demo Client D|Booking app screens and design system.|2026', 'Dashboard prototype|Demo Client E|Clickable analytics dashboard prototype.|2026', 'Website redesign|Demo Client F|New interface for an existing education site.|2025']
 };
 const reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
